@@ -116,32 +116,39 @@
       gap: 12px;
     }
 
-    figure {
-      overflow: hidden;
-      min-width: 0;
-      margin: 0;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: var(--surface);
-    }
+figure {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
 
-    /* Larger, taller photo frame */
-    .photo-wrap {
-      aspect-ratio: 3 / 2;
-      overflow: hidden;
-      background: #e5e3dc;
-    }
 
-    .photo-wrap img {
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: transform 250ms ease;
-    }
+.photo-wrap {
+  aspect-ratio: 3 / 2;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #e5e3dc;
+}
+
+.photo-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 250ms ease;
+}
 
     figure:hover img { transform: scale(1.04); }
 
-    figcaption { padding: 14px 16px; }
+figcaption {
+  padding: 14px 16px;
+  flex-grow: 1;
+}
 
     figcaption h4 {
       margin: 0 0 5px;
@@ -298,6 +305,19 @@
                 <p>This ATV had been sitting for 5+ years; It had no seat, shot ball joints, punctured tires, and the engine (it was unmounted when I bought the ATV) had no compression</p>
               </figcaption>
             </figure>
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/AtvProject1Before_1.jpeg"
+                  alt="Updated kitchen with bright cabinets and improved storage"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>Fixing ATV</h4>
+                <p>Fixing my first ATV</p>
+              </figcaption>
+            </figure>
 
           </div>
         </section>
@@ -350,6 +370,19 @@
                 <p>This ATV had been siting for 2+ years; It had a internal broken shift shaft, nonrunning engine, bad brakes, no spark, and all the wires were shot</p>
               </figcaption>
             </figure>
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/AtvProjec21Before_1.jpeg"
+                  alt="Decided to rebuilt ATV as my second project"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>ATV Before</h4>
+                <p>Fixing Atv</p>
+              </figcaption>
+            </figure>
 
           </div>
         </section>
@@ -375,6 +408,113 @@
         </section>
       </div>
     </article>    
+
+    <!-- Project 4 -->
+    <article class="project">
+      <header class="project-header">
+        <h2>Second GoKart Build</h2>
+      </header>
+
+      <div class="galleries">
+        <section class="gallery-group" aria-label="Kitchen before photos">
+          <h3 class="gallery-heading"><span>Before</span> </h3>
+
+          <div class="photo-grid">
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/GoCartProject2Before_1.jpeg"
+                  alt="Decided to rebuilt ATV as my second project"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>Second GoKart Before 1</h4>
+                <p>This ATV had been siting for 2+ years; It had a internal broken shift shaft, nonrunning engine, bad brakes, no spark, and all the wires were shot</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/GoCartProject2Before_2.jpeg"
+                  alt="Decided to rebuilt ATV as my second project"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>ASecond GoKart Before 2</h4>
+                <p>Fixing Atv</p>
+              </figcaption>
+            </figure>
+
+          </div>
+        </section>
+
+        <section class="gallery-group" aria-label="Kitchen after photos">
+          <h3 class="gallery-heading"><span>After</span> </h3>
+
+          <div class="photo-grid">
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/GoCartProject2After_1.jpeg"
+                  alt="Updated kitchen with bright cabinets and improved storage"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>Second GoKart After 1</h4>
+                <p>Second GoKart After 1 Desc</p>
+              </figcaption>
+            </figure>
+
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/GoCartProject2After_2.jpeg"
+                  alt="Updated kitchen with bright cabinets and improved storage"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>Second GoKart After 2</h4>
+                <p>Second GoKart After 2 Desc</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </article>  
+
+
+    <!-- Project 5 -->
+    <article class="project">
+      <header class="project-header">
+        <h2>Bike Build</h2>
+      </header>
+
+      <div class="galleries">
+        <section class="gallery-group" aria-label="Kitchen after photos">
+          <h3 class="gallery-heading"><span>After</span> </h3>
+
+          <div class="photo-grid">
+            <figure>
+              <div class="photo-wrap">
+                <img
+                  src="images/BikeProject_1.jpeg"
+                  alt="Updated kitchen with bright cabinets and improved storage"
+                  loading="lazy"
+                >
+              </div>
+              <figcaption>
+                <h4>Bike After</h4>
+                <p>Rebuilt engine, replacing head cylinder; Built DIY seat; Replaced tires; Redid all wiring systems; Fixed ball joints and control arms; Added fuel tank; Built DIY exhuast</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </article>   
   </main>
 
   <footer>
